@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class MyInsertionSort {
     static void insertionSort(int[] arr) {
-        //int sortedIndex = 0;
         //step 2
         for (int unsortedIndex = 1; unsortedIndex < arr.length; unsortedIndex++) {
             //step 3
