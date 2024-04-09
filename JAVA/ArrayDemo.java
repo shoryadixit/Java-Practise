@@ -32,35 +32,6 @@ public class ArrayDemo {
         //small task to practise the
         //make array in string type of 2d
 */
-        String[][] commonFirstNamesInIndia = {
-                /*Name Start with A*/{},
-                /*Name Start with B*/{},
-                /*Name Start with C*/{},
-                /*Name Start with D*/{},
-                /*Name Start with E*/{},
-                /*Name Start with F*/{},
-                /*Name Start with G*/{},
-                /*Name Start with H*/{},
-                /*Name Start with I*/{},
-                /*Name Start with J*/{},
-                /*Name Start with K*/{},
-                /*Name Start with L*/{},
-                /*Name Start with M*/{},
-                /*Name Start with N*/{},
-                /*Name Start with O*/{},
-                /*Name Start with P*/{},
-                /*Name Start with Q*/{},
-                /*Name Start with R*/{},
-                /*Name Start with S*/{},
-                /*Name Start with T*/{},
-                /*Name Start with U*/{},
-                /*Name Start with V*/{},
-                /*Name Start with W*/{},
-                /*Name Start with X*/{},
-                /*Name Start with Y*/{},
-                /*Name Start with Z*/{},
-
-        };
 
         //Another SomeProblem.Demo
         //create a two - dimensional array to store the room

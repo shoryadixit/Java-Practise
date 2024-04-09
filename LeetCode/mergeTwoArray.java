@@ -4,9 +4,6 @@ public class mergeTwoArray {
     public static void merge(int[] nums1, int[] nums2, int m, int n){
         int[] nums = new int[m];
         for (int i = 0; i < m; i++){
-//            if(nums1[i] == 0)
-//                continue;
-//            else
                 nums[i] = nums1[i];
         }
         int[] ans = new int[m + n];
