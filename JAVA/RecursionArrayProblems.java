@@ -1,5 +1,7 @@
 package JAVA;
 
+import java.util.Arrays;
+
 public class RecursionArrayProblems {
     static boolean isSortedArray(int[] arr, int index) {
         if (index == arr.length - 1) {
@@ -46,12 +48,35 @@ public class RecursionArrayProblems {
         return binarySearch(arr, target, s, m - 1);
     }
 
+    static void bubbleSort(int[] arr, int start, int end) {
+        if (end == 0) {
+            return;
+        }
+
+        if (start < end) {
+            if (arr[start] > arr[start + 1]) {
+                // swap
+                int temp = arr[start];
+                arr[start] = arr[start + 1];
+                arr[start + 1] = temp;
+            }
+            bubbleSort(arr, start + 1, end);
+        } else {
+            bubbleSort(arr, 0, end - 1);
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr2 = { 3, 2, 1, 5, 10, 4, 9 };
         System.out.println("Is Sorted Array -> " + isSortedArray(arr, 0));
 
         System.out.println("Linear Search -> " + linearSearch(arr, 0, 3));
 
         System.out.println("Binary Search -> " + binarySearch(arr, 2, 0, arr.length));
+
+        bubbleSort(arr2, 0, arr.length - 1);
+
+        System.out.println("Bubble Sort -> " + Arrays.toString(arr2));
     }
 }
